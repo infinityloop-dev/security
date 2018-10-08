@@ -10,9 +10,9 @@
 
 {contentType text/plain}
 {if !empty($security['contact'])}Contact: {$security['contact']}
-{if !empty($security['permission'])}Permission: {$security['permission']}
-{if !empty($security['encryption'])}Encryption: {$security['encryption']}
-{if !empty($security['signature'])}Signature: {$security['signature']}
-{if !empty($security['policy'])}Policy: {$security['policy']}
-{if !empty($security['hiring'])}Hiring: {$security['hiring']}
-{if !empty($security['acknowledgements'])}Acknowledgements: {$security['acknowledgements']}
+{/if}{if !empty($security['permission'])}Permission: {$security['permission']}
+{/if}{if !empty($security['encryption'])}Encryption: {$security['encryption']}
+{/if}{if !empty($security['signature'])}Signature: {$security['signature']}
+{/if}{if !empty($security['policy'])}Policy: {$security['policy']}
+{/if}{if !empty($security['hiring'])}Hiring: {$security['hiring']}
+{/if}{if !empty($security['acknowledgements'])}Acknowledgements: {$security['acknowledgements']}{/if}
