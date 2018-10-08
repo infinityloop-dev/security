@@ -46,22 +46,17 @@ parameters:
 ```
 class ExamplePresenter implements IPresenter
 {
-    /** @var  \Nepttune\Component\IRobotsFactory */
-    protected $iRobotsFactory;
+    /** @var  \Nepttune\Component\ISecurityFactory */
+    protected $iSecurityFactory;
     
-    public function __construct(\Nepttune\Component\IRobotsFactory $IRobotsFactory)
+    public function __construct(\Nepttune\Component\ISecurityFactory $ISecurityFactory)
     {
-        $this->iRobotsFactory = $IRobotsFactory;
-    }
-    
-    public function actionRobots()
-    {
-        $this->getHttpResponse()->setContentType('text/plain');
+        $this->iSecurityFactory = $ISecurityFactory;
     }
 
-    protected function createComponentRobots()
+    protected function createComponentSecurity()
     {
-        return $this->iRobotsFactory->create();
+        return $this->iSecurityFactory->create();
     }
 }
 ```
