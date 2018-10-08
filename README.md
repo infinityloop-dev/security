@@ -54,7 +54,7 @@ class ExamplePresenter implements IPresenter
         $this->iSecurityFactory = $ISecurityFactory;
     }
 
-    protected function createComponentSecurity()
+    protected function createComponentSecurity() : \Nepttune\Component\Security
     {
         return $this->iSecurityFactory->create();
     }
