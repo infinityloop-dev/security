@@ -14,7 +14,7 @@ declare(strict_types = 1);
 
 namespace Nepttune\Component;
 
-final class Security extends BaseComponent
+final class Security extends \Nette\Application\UI\Control
 {
     /** @var array */
     private $security;
@@ -28,5 +28,12 @@ final class Security extends BaseComponent
     protected function beforeRender() : void
     {
         $this->template->security = $this->security;
+    }
+ 
+    public function render() : void
+    {
+        $this->beforeRender();
+        $this->template->setFile(__DIR__ . '/Security.latte');
+        $this->template->render();
     }
 }
