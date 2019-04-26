@@ -20,9 +20,7 @@ final class Security extends \Nette\Application\UI\Control
     private $security;
     
     public function __construct(array $security)
-    {
-        parent::__construct();
-        
+    {   
         $this->security = $security;
     }
     protected function beforeRender() : void
