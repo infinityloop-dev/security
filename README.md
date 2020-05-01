@@ -1,13 +1,6 @@
 # Security
 :wrench: Security generator component
 
-![Packagist](https://img.shields.io/packagist/dt/nepttune/security.svg)
-![Packagist](https://img.shields.io/packagist/v/nepttune/security.svg)
-[![CommitsSinceTag](https://img.shields.io/github/commits-since/nepttune/robots/v1.0.svg?maxAge=600)]()
-
-[![Code Climate](https://codeclimate.com/github/nepttune/security/badges/gpa.svg)](https://codeclimate.com/github/nepttune/security)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nepttune/security/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nepttune/security/?branch=master)
-
 ## Introduction
 
 This component automaticaly generates security.txt from parameters in configuration.
